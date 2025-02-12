@@ -22,7 +22,7 @@ div.avatar-content { flex: 1; margin-left: 1rem; }
 div.avatar-content > h1 { font-size: 1.8rem; font-weight: 800;}
 div.avatar-content > h2 { font-size: 1rem; font-weight: normal; line-height: 1.2; }
 div.avatar-content > h2 > span { display: none; }
-div.avatar-content > h3 { font-size: 2.2rem; font-weight: normal; margin-top: 0.3rem; }
+div.avatar-content > h3 { font-size: 2.2rem; font-weight: normal; margin-top: 0.4rem; }
 div.avatar-content > h3 > a { margin-left: 0.6rem; color: inherit; text-decoration: none; display: inline-block;}
 div.avatar-content > h3 > a:first-of-type { margin-left: 0; }
 div.avatar-content > h3 > a > span { display: none; }
