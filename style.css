@@ -1,51 +1,56 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-p, h1, h2, h3, ul { font-family: "Noto Sans", sans-serif; color: #494e52; }
-a { color: #52adc8; }
 hr { border: none; height: 1px; color: #494e52; background-color: #494e52; }
+p, h1, h2, h3, ul { color: #494e52; font-family: "Noto Sans", sans-serif; }
+a { color: #52adc8; }
 
-div.main {
+div.wrapper {
+    min-width: 360px;
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2.5rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-div.avatar { margin-bottom: 2rem; }
-div.avatar-photo { width: 20%; margin-right: 4%; display: inline-block; vertical-align: middle; }
+div.avatar { display: flex; align-items: center; }
+div.avatar-photo { width: 6rem; }
 div.avatar-photo > img { width: 100%; aspect-ratio: 1 !important; border-radius: 50%; object-fit: cover;}
-div.avatar-content { display: inline-block; vertical-align: middle; }
-div.avatar-content > h1 { font-size: 2rem; }
-div.avatar-content > h2 { font-size: 1.2rem; font-weight: normal; }
-div.avatar-content > h3 { font-size: 0.9rem; font-weight: normal; margin-top: 0.4rem; }
-div.avatar-content > h3 > a { color: inherit; text-decoration: none; margin-left: 0.6rem; }
-div.avatar-content > h3 > a:first-child { margin-left: 0; }
-div.avatar-content > h3 > a > i { font-size: 1.3rem; vertical-align: top; }
-div.avatar-content > h3 > a > span:hover { text-decoration: underline; }
-div.content > h2 { font-size: 1.2rem; margin-top: 1.6rem; margin-bottom: 0.2rem; }
+div.avatar-content { flex: 1; margin-left: 1rem; }
+div.avatar-content > h1 { font-size: 1.8rem; font-weight: 800;}
+div.avatar-content > h2 { font-size: 1rem; font-weight: normal; line-height: 1.2; }
+div.avatar-content > h2 > span { display: none; }
+div.avatar-content > h3 { font-size: 2.2rem; font-weight: normal; margin-top: 0.3rem; }
+div.avatar-content > h3 > a { margin-left: 0.6rem; color: inherit; text-decoration: none; display: inline-block;}
+div.avatar-content > h3 > a:first-of-type { margin-left: 0; }
+div.avatar-content > h3 > a > span { display: none; }
+
+
+div.content > h2 { font-size: 1.2rem; font-weight: 600; margin-top: 1.6rem; margin-bottom: 0.2rem; }
 div.content > p { margin-top: 0.8rem; }
 div.content > ul { margin-top: 0.8rem; padding-left: 2rem; }
 div.content > ul > li { margin-top: 0.4rem; }
 
 @media (min-width: 720px){
-    div.avatar { width: 160px; float: left; }
-    div.content { width: 68%; float: right;}
+    div.wrapper { display: flex; align-items: flex-start; margin-top: 2.5rem; }
+    div.avatar { width: 11rem; display: block; }
     div.avatar-photo { width: 100%; }
-    div.avatar-content > h1 { font-size: 1.4rem; margin-top: 1rem; }
-    div.avatar-content > h2 { font-size: 1rem; margin-top: 0.4rem; }
-    div.avatar-content > h3 { margin-top: 0.8rem;}
-    div.avatar-content > h3 > a { display: block; margin-left: 0; margin-top: 0.2rem; }
+    div.avatar-content { margin-left: 0; }
+    div.avatar-content > h1 { font-size: 1.5rem; margin-top: 1rem; }
+    div.avatar-content > h2 { font-size: 1.2rem; margin-top: 0.4rem; }
+    div.avatar-content > h3 { font-size: 1rem; margin-top: 0.8rem; }
+    div.avatar-content > h3 > a { margin-left: 0; margin-top: 0.2rem; display: block; }
+    div.avatar-content > h3 > a > i { font-size: 1.4rem; vertical-align: top; }
+    div.avatar-content > h3 > a > span { display: inline-block; }
+    div.avatar-content > h3 > a > span > span:hover { text-decoration: underline; }
+    div.content { flex: 1; margin-left: 2rem; }
 }
 
 @media (min-width: 1024px){
-    div.main{ max-width: 1024px; }
-    div.avatar{ width: 220px; }
-    div.content{ width: 72%; }
-    div.avatar-content > h1{ font-size: 2rem; }
-    div.avatar-content > h2{ font-size: 1.2rem; font-weight: normal; }
-    div.avatar-content > h3{ font-size: 1rem; }
-    div.avatar-content > h3 > a > i{ font-size: 1.4rem;}
+    div.wrapper { max-width: 1000px; }
+    div.avatar { width: 13rem; }
+    div.avatar-content > h1{ font-size: 1.8rem; }
+    div.avatar-content > h2 > span { display: inline-block; }
 }
