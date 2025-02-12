@@ -1,41 +1,62 @@
 <html>
     <head>
         <title>Alihan H&uuml;y&uuml;k</title>
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif:700'>
-        <link rel='stylesheet' href='src/fontawesome/css/fontawesome.min.css'>
-        <link rel='stylesheet' href='src/academicons/css/academicons.min.css'>
-        <style>
-            * {margin:0; padding:0}
-            body {color:#fffff0; background-color:#222222}
-            div {position:absolute; top:33%; transform:translateY(-50%); width:100%; text-align:center}
-            img {width:240px; height:240px; object-fit:cover; border-radius:50%; border: 6px solid #fffff0; margin-bottom:1.2rem}
-            h1,h2 {font-weight:normal}
-            h1 {font-family:'Noto Serif', serif; font-size:4.8rem; margin-bottom:1.2rem}
-            h2 {font-family:'Noto Sans', sans-serif; font-size:1.2rem; margin-bottom:0.3rem}
-            p {font-size:2.4rem}
-            a {color: #fffff0}
-            a:hover {color:#888880}
-            a:not(:last-child) {margin-right:0.9rem}
-        </style>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif:700">
+        <link rel="stylesheet" href="src/fontawesome/css/fontawesome.min.css">
+        <link rel="stylesheet" href="src/academicons/css/academicons.min.css">
         <script>
             window.onload = function() {
-                var user = 'ahuyuk';
-                var domain = 'seas.harvard.edu';
-                document.getElementById('email').href = 'mailto:' + user + '@' + domain;
+                var user = "ahuyuk";
+                var domain = "seas.harvard.edu";
+                document.getElementById("email").href = "mailto:" + user + "@" + domain;
             }
         </script>
     </head>
     <body>
-        <div>
-            <img src='res/photo.jpg'>
-            <h1>Alihan H&uuml;y&uuml;k</h1>
-            <h2>Postdoctoral Fellow in CS, Harvard University</h2>
-            <p>
-                <a id='email' target='_blank' href=''><i class='fa fa-envelope-square'></i></a><!--
-                --><a target='_blank' href='https://scholar.google.com/citations?user=EMq6KwMAAAAJ'><i class='ai ai-google-scholar-square'></i></a><!--
-                --><a target='_blank' href='https://www.linkedin.com/in/alihanhyk'><i class='fa fa-linkedin-square'></i></a><!--
-                --><a target='_blank' href='https://github.com/alihanhyk'><i class='fa fa-github-square'></i></a>
-           </p>
+        <div class="main">
+            <div class="avatar">
+                <div class="avatar-photo">
+                    <img src="res/photo.jpg">
+                </div>
+                <div class="avatar-content">
+                    <h1>Alihan H&uuml;y&uuml;k</h1>
+                    <h2>Postdoctoral Fellow at Harvard University</p>
+                    <h3>
+                        <a target="_blank" href="" id="email"><i class="fa fa-envelope-square"></i> <span>Email</span></a>
+                        <a target="_blank" href="https://scholar.google.com/citations?user=EMq6KwMAAAAJ"><i class="ai ai-google-scholar-square"></i> <span>Google Scholar</span></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/alihanhyk"><i class="fa fa-linkedin-square"></i> <span>LinkedIn</span></a>
+                        <a target="_blank" href="https://github.com/alihanhyk"><i class="fa fa-github-square"></i> <span>GitHub</span></a>
+                    </h3>
+                </div>
+            </div>
+            <div class="content">
+                <h2>About Me</h2>
+                <hr>
+                <p>
+                    I am a postdoctoral fellow at <a target="_blank" href="https://dtak.github.io">Harvard's Data to Actionable Knowledge Lab</a>, working with Prof. Finale Doshi-Velez.
+                    My research interests lie in machine learning for human-centered decision-making. 
+                    I aim to develop methods that can help understand, support, and improve human decision-making behavior, particularly in healthcare settings.
+                </p>
+                <p>
+                    Prior to joining Harvard, I completed my PhD in applied maths at the University of Cambridge, supervised by Prof. Mihaela van der Schaar.
+                    After completing my PhD, I interned at Microsoft Research Cambridge and Nokia Bell Labs.
+                    My background is in electrical engineering, I hold a BSc from Bilkent University, Turkey.
+                </p>
+                <p>
+                    In my personal life, I am an avid board game player.
+                    Currently, my favorite game is Root!
+                    I like being active.
+                    I was involved with <a target="_blank" href="https://www.clarehall.cam.ac.uk/chbc/">Clare Hall Boat Club</a> while I was in Cambridge, both rowing and coxing &ndash; we won blades in May Bumps 2024!
+                    I love going on a <a target="_blank" href="https://www.parkrun.com">parkrun</a> and trying out new sports when I have the chance.
+                </p>
+                <h2>News!</h2>
+                <hr>
+                <ul>
+                    <li><b>Feb 2025:</b> My internship project at Microsoft, <a target="_blank" href="https://openreview.net/forum?id=VVixJ9QavY">"Reasoning elicitation in langauge models via counterfactual feedback"</a>, is selected for oral presentation at ICLR 2025.</li>
+                    <li><b>Sep 2024:</b> I joined the Data to Actionable Knowledge Lab at Harvard University as a postdoctoral fellow in computer science.</li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>
